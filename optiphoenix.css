@@ -1,0 +1,161 @@
+/* global variables */
+* , *:after , *:before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.6em;
+    font-family: var(--poppins);
+    background-color: var(--grey);
+}
+
+:root{
+    --poppins: 'Poppins', sans-serif;
+    --grey: #f7f7f7;
+    --red: #ED272F;
+    --white: #fff;
+    --black: #333;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.center{
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section{
+    padding: 100px 40px;
+}
+
+/* our services starts */
+
+#services1{
+    background-color: var(--grey);
+    padding: 60px 40px;
+}
+.boxes-serv{
+    text-align: center;
+}
+.services1 h2{
+    margin-bottom: 20px;
+    font-family: var(--poppins);
+    /* padding-bottom: 0px !important; */
+}
+.services1 p{
+    color: rgb(121, 121, 121);
+}
+.services1 h4{
+    font-size: 16px;
+    margin: 10px 0px;
+    font-weight: normal;
+}
+.box11{
+    padding: 25px;
+    margin-right: 15px;
+    font-family: var(--poppins);
+    border-radius: 8px;
+}
+.box11{
+    position: relative;
+}
+
+.box11:hover{
+-webkit-box-shadow: 8px 8px 30px 0px rgb(42 67 113 / 15%);
+border-radius: 20px;
+transition: all .3s linear;
+}
+
+.button{
+    text-align: center;
+}
+
+button.btn{
+    box-shadow: none;
+    border: none;
+    padding: 14px 28px;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 16px;
+    cursor: pointer;
+    transition: linear;
+    margin-top: 20px;
+}
+button.btn:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* form  */
+
+  .loginPopup {
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  .formPopup {
+    display: none;
+    position: fixed;
+    left: 45%;
+    top: 5%;
+    transform: translate(-50%, 5%);
+    border: 3px solid #999999;
+    z-index: 9;
+  }
+  .formContainer {
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  .formContainer input[type=text],
+  .formContainer input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: #eee;
+  }
+  .formContainer input[type=text]:focus,
+  .formContainer input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  .formContainer .btn {
+    padding: 12px 20px;
+    border: none;
+    background-color: var(--black);
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+    opacity: 0.8;
+  }
+  .formContainer .cancel {
+    background-color: #cc0000;
+  }
+  .formContainer .btn:hover,
+  .openButton:hover {
+    opacity: 1;
+  }
+
+
+@media screen and (max-width:767px){
+    .flex{
+        flex-direction: column;
+    }
+    .services1 h2, .services1 h4, .box11, .button{
+        text-align: left !important;
+    }
+}
