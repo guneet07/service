@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="optiphoenix.css">
+</head>
+<body>
+    <!-- our services starts -->
+<section id="services1" class="services1">
+    <div class="container">
+        <h2 class="center">Australia’s most secure & trusted garage door brand</h5>
+        <h4 class="center">We know that behind your garage door are the things that matter to you most. 
+            The things that make your house a home. Most garage doors just close but a B&D garage door can be locked securely shut.</h2>
+
+        <div class="boxes-serv flex">
+            <div class="box11">
+                <img src="https://cdn-3.convertexperiments.com/uf/1002628/10025029/1605083565guarantee.png" alt="">
+                <h3>10 Years Warranty</h3>
+                <p>All our garage doors, components, and accessories - other than batteries, bulbs, or 
+                    fuses - include a one to ten-year warranty.</p>
+            </div>
+
+            <div class="box11">
+                <img src="https://cdn-3.convertexperiments.com/uf/1002628/10025029/1605083627sixty.png" alt="">
+                <h3>60 years of innovation</h3>
+                <p>We have been innovating garage doors since 1956, where we have grown to be 
+                    Australia’s original and most trusted garage door brand.</p>
+            </div>
+
+            <div class="box11">
+                <img src="https://cdn-3.convertexperiments.com/uf/1002628/10025029/1605083662australia.png" alt="">
+                <h3>Australian owned and designed</h3>
+                <p>All our garage doors and openers are designed here in Australia using premium, 
+                    custom-designed components.</p>
+            </div>
+        </div>
+        <div class="button">
+            <button class="btn" onclick="openForm()">Our range of garage doors</button>
+            <div class="loginPopup">
+                <div class="formPopup" id="popupForm">
+                  <form action="/action_page.php" class="formContainer">
+                    <h2>Please Log in</h2>
+                    <label for="email">
+                      <strong>E-mail</strong>
+                    </label>
+                    <input type="text" id="email" placeholder="Your Email" name="email" required>
+                    <label for="psw">
+                      <strong>Password</strong>
+                    </label>
+                    <input type="password" id="psw" placeholder="Your Password" name="psw" required>
+                    <button type="submit" class="btn">Log in</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+                </div>
+              </div>
+              <script>
+                function openForm() {
+                  document.getElementById("popupForm").style.display = "block";
+                }
+                function closeForm() {
+                  document.getElementById("popupForm").style.display = "none";
+                }
+              </script>
+        </div>
+        </div>
+</section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
